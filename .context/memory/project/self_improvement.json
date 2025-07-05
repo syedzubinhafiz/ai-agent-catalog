@@ -1,0 +1,23 @@
+{
+  "insights": {
+    "process": [],
+    "efficiency": [],
+    "patterns": [],
+    "blockers": []
+  },
+  "metrics": {
+    "time_allocation": {},
+    "task_completion": {},
+    "decision_tracking": {}
+  },
+  "recommendations": {
+    "high_priority": [],
+    "medium_priority": [],
+    "low_priority": []
+  },
+  "metadata": {
+    "last_updated": "2025-01-27T19:30:00",
+    "version": "1.0.0",
+    "project": "ai-agent-catalog"
+  }
+} 
