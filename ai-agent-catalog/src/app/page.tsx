@@ -1,6 +1,8 @@
-import Image from "next/image";
 import { getAgents } from "@/lib/data";
 import type { Agent } from "@/lib/types";
+import { Suspense } from "react";
+import AgentsGrid from "@/components/agents-grid";
+import AgentsGridSkeleton from "@/components/agents-grid-skeleton";
 
 // This component is a Server Component by default (no 'use client')
 // It fetches data on the server so the HTML is rendered with agent content.
@@ -18,19 +20,9 @@ export default async function Home() {
         </p>
       </header>
 
-      <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">
-        {agents.map((agent) => (
-          <li
-            key={agent.id}
-            className="border rounded-lg p-4 shadow-sm hover:shadow-md transition-shadow bg-background/50"
-          >
-            <h2 className="text-lg font-medium mb-1">{agent.name}</h2>
-            <p className="text-sm text-muted-foreground line-clamp-3">
-              {agent.description}
-            </p>
-          </li>
-        ))}
-      </ul>
+      <Suspense fallback={<AgentsGridSkeleton />}>
+        <AgentsGrid />
+      </Suspense>
     </main>
   );
 }
