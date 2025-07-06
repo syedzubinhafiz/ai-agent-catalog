@@ -13,6 +13,7 @@ import type {
   AgentStatus,
   PricingModel,
 } from "@/lib/types";
+import { motion, useReducedMotion } from "framer-motion";
 
 interface Props {
   categories: AgentCategory[];
@@ -25,8 +26,15 @@ export default function FilterBar({ categories, statuses, pricings }: Props) {
   const filters = useAppSelector((state: RootState) => state.filters);
   const { category, status, pricing, search } = filters;
 
+  const shouldReduceMotion = useReducedMotion();
+
   return (
-    <div className="flex flex-col md:flex-row flex-wrap gap-4 w-full max-w-5xl">
+    <motion.div
+      initial={shouldReduceMotion ? undefined : { opacity: 0, y: -10 }}
+      animate={shouldReduceMotion ? undefined : { opacity: 1, y: 0 }}
+      transition={{ duration: 0.25 }}
+      className="flex flex-col md:flex-row flex-wrap gap-4 w-full max-w-5xl"
+    >
       <input
         type="text"
         placeholder="Search agents..."
@@ -91,6 +99,6 @@ export default function FilterBar({ categories, statuses, pricings }: Props) {
           </option>
         ))}
       </select>
-    </div>
+    </motion.div>
   );
 } 
