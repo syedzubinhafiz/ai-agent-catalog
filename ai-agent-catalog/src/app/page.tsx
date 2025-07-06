@@ -1,7 +1,7 @@
 import { getAgents } from "@/lib/data";
 import type { Agent } from "@/lib/types";
 import { Suspense } from "react";
-import AgentsGrid from "@/components/agents-grid";
+import AgentsCatalog from "@/components/agents-catalog";
 import AgentsGridSkeleton from "@/components/agents-grid-skeleton";
 
 // This component is a Server Component by default (no 'use client')
@@ -21,7 +21,7 @@ export default async function Home() {
       </header>
 
       <Suspense fallback={<AgentsGridSkeleton />}>
-        <AgentsGrid />
+        <AgentsCatalog agents={agents} />
       </Suspense>
     </main>
   );

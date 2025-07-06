@@ -1,11 +1,23 @@
-import { getAgents } from "@/lib/data";
-import type { Agent } from "@/lib/types";
-import { Card, CardHeader, CardDescription, CardContent } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
+"use client";
 
-export default async function AgentsGrid() {
-  const agents: Agent[] = await getAgents();
+import type { Agent } from "@/lib/types";
+import Link from "next/link";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+
+interface Props {
+  agents: Agent[];
+}
+
+export default function AgentsGridClient({ agents }: Props) {
+  // Render empty state when no agents match filters
+  if (agents.length === 0) {
+    return (
+      <p className="text-muted-foreground text-sm text-center w-full max-w-5xl">
+        No agents match your filters.
+      </p>
+    );
+  }
 
   return (
     <ul className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 w-full max-w-5xl">

@@ -1,6 +1,7 @@
 [
     {
       "id": "agent-001",
+      "slug": "intelligent-chatbot-pro",
       "name": "Intelligent Chatbot Pro",
       "description": "An advanced AI chatbot for enhanced customer support and query resolution.",
       "status": "Active",
@@ -9,6 +10,7 @@
     },
     {
       "id": "agent-002",
+      "slug": "voice-assistant-x",
       "name": "Voice Assistant X",
       "description": "Next-generation voice automation for internal operations and data retrieval.",
       "status": "Beta",
@@ -17,6 +19,7 @@
     },
     {
       "id": "agent-003",
+      "slug": "marketing-content-generator",
       "name": "Marketing Content Generator",
       "description": "AI-powered tool to generate engaging marketing copy, ideas, and campaign outlines.",
       "status": "Active",
@@ -25,6 +28,7 @@
     },
     {
       "id": "agent-004",
+      "slug": "data-analyst-agent",
       "name": "Data Analyst Agent",
       "description": "An autonomous AI agent designed to automate data analysis and report generation.",
       "status": "Archived",
@@ -33,6 +37,7 @@
     },
     {
       "id": "agent-005",
+      "slug": "code-review-assistant",
       "name": "Code Review Assistant",
       "description": "AI assistant that provides instant feedback and suggestions for code quality.",
       "status": "Beta",
@@ -41,6 +46,7 @@
     },
     {
       "id": "agent-006",
+      "slug": "hr-onboarding-bot",
       "name": "HR Onboarding Bot",
       "description": "Automates the new employee onboarding process, answering FAQs and guiding through tasks.",
       "status": "Active",
@@ -49,6 +55,7 @@
     },
     {
       "id": "agent-007",
+      "slug": "social-media-scheduler-ai",
       "name": "Social Media Scheduler AI",
       "description": "Optimizes and automates your social media content scheduling and posting.",
       "status": "Active",
@@ -57,6 +64,7 @@
     },
     {
       "id": "agent-008",
+      "slug": "financial-advisor-ai",
       "name": "Financial Advisor AI",
       "description": "Provides personalized financial advice and investment insights.",
       "status": "Beta",
@@ -65,6 +73,7 @@
     },
     {
       "id": "agent-009",
+      "slug": "legal-document-drafter",
       "name": "Legal Document Drafter",
       "description": "Assists in drafting legal documents and contracts with AI accuracy.",
       "status": "Archived",
@@ -73,6 +82,7 @@
     },
     {
       "id": "agent-010",
+      "slug": "customer-feedback-analyzer",
       "name": "Customer Feedback Analyzer",
       "description": "Analyzes customer feedback from various channels to identify key sentiments and trends.",
       "status": "Active",

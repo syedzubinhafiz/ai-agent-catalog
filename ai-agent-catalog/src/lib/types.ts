@@ -37,6 +37,8 @@ export interface Agent {
   icon?: string;
   /** List of free-form tags. */
   tags?: string[];
+  /** URL-friendly slug used for routing. */
+  slug: string;
 }
 
 // ────────────────────────────────────────────────────────────────────────────
