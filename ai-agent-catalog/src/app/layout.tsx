@@ -20,12 +20,29 @@ export const metadata: Metadata = {
   },
   description:
     "Discover and explore a curated list of AI agents — search, filter, and find the right tool for your workflow.",
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
+  openGraph: {
+    title: "AI Agent Catalog",
+    description:
+      "Discover and explore a curated list of AI agents — search, filter, and find the right tool for your workflow.",
+    url: "https://ai-agent-catalog.example.com",
+    siteName: "AI Agent Catalog",
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Agent Catalog",
+    description:
+      "Discover and explore a curated list of AI agents — search, filter, and find the right tool for your workflow.",
+    creator: "@aiagentcatalog",
   },
   generator: "Next.js",
   applicationName: "AI Agent Catalog",
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

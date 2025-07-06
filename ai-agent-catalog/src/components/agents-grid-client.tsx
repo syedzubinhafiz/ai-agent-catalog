@@ -36,7 +36,7 @@ export default function AgentsGridClient({ agents }: Props) {
     visible: { opacity: 1, y: 0, transition: { duration: 0.25 } },
   };
 
-  const MotionCard = motion(Card);
+  const MotionCard = motion.create(Card);
 
   return (
     <AnimatePresence mode="wait">
