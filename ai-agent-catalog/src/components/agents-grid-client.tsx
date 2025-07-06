@@ -11,6 +11,7 @@ interface Props {
 }
 
 export default function AgentsGridClient({ agents }: Props) {
+  const shouldReduceMotion = useReducedMotion();
   // Render empty state when no agents match filters
   if (agents.length === 0) {
     return (
@@ -19,8 +20,6 @@ export default function AgentsGridClient({ agents }: Props) {
       </p>
     );
   }
-
-  const shouldReduceMotion = useReducedMotion();
 
   const containerVariants = {
     hidden: {},

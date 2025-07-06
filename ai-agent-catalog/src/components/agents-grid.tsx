@@ -1,6 +1,6 @@
 import { getAgents } from "@/lib/data";
 import type { Agent } from "@/lib/types";
-import { Card, CardHeader, CardDescription, CardContent } from "@/components/ui/card";
+import { Card, CardHeader, /*CardDescription,*/ CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 
